@@ -1,11 +1,11 @@
-from classes.neighborhood import Neighborhood
+from classes.city import City
 
-neighborhood = Neighborhood()
+list1 = [1, 0, 0, 0, 0, 1, 0, 0]
+list2 = []
 
-neighborhood.buyHouse(1)
-neighborhood.buyHouse(2)
-neighborhood.buyHouse(3)
-neighborhood.buyHouse(4)
-neighborhood.buyHouse(5)
-neighborhood.buyHouse(6)
-neighborhood.inorder()
+city = City()
+
+for state in list1:
+  city.buyHouse(state)
+
+city.inorder()
